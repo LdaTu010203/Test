@@ -3,8 +3,6 @@ import React, { useState } from "react";
 import { styles, text } from "@/constants/Styles";
 import { Link, router } from "expo-router";
 
-const home = router.push("/(tabs)/home");
-
 const SignInEffect = () => {
   const [user, setUser] = useState({
     email: "",
