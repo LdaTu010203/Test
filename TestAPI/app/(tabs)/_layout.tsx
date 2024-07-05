@@ -32,10 +32,7 @@ export default function TabLayout() {
         options={{
           title: "Shop",
           tabBarIcon: ({ color, focused }) => (
-            <TabBarIcon
-              name={focused ? "home" : "home-outline"}
-              color={color}
-            />
+            <TabBarIcon name={focused ? "bag" : "bag-outline"} color={color} />
           ),
         }}
       />
@@ -45,7 +42,9 @@ export default function TabLayout() {
           title: "Info",
           tabBarIcon: ({ color, focused }) => (
             <TabBarIcon
-              name={focused ? "home" : "home-outline"}
+              name={
+                focused ? "information-circle" : "information-circle-outline"
+              }
               color={color}
             />
           ),
@@ -57,7 +56,7 @@ export default function TabLayout() {
           title: "Mem",
           tabBarIcon: ({ color, focused }) => (
             <TabBarIcon
-              name={focused ? "home" : "home-outline"}
+              name={focused ? "card" : "card-outline"}
               color={color}
             />
           ),
@@ -69,7 +68,7 @@ export default function TabLayout() {
           title: "Acc",
           tabBarIcon: ({ color, focused }) => (
             <TabBarIcon
-              name={focused ? "home" : "home-outline"}
+              name={focused ? "person" : "person-outline"}
               color={color}
             />
           ),

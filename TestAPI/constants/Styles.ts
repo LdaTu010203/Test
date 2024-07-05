@@ -1,7 +1,6 @@
 import { View, Text, StyleSheet, TextComponent } from "react-native";
 import React from "react";
-import { Colors } from "./Colors";
-
+import { Colors } from "@/constants/Colors";
 export const styles = StyleSheet.create({
   containerLogo: {
     display: "flex",
@@ -28,6 +27,13 @@ export const styles = StyleSheet.create({
     flex: 1,
     alignSelf: "center",
   },
+  Button: {
+    marginHorizontal: 20,
+    borderRadius: 15,
+    padding: 10,
+    justifyContent: "center",
+    alignItems: "center",
+  },
 });
 
 export const text = StyleSheet.create({
@@ -48,5 +54,9 @@ export const text = StyleSheet.create({
     alignSelf: "center",
     paddingHorizontal: 10,
     width: 100,
+  },
+  textButton: {
+    fontSize: 20,
+    alignSelf: "center",
   },
 });
