@@ -1,12 +1,19 @@
-import { View, Text, TextInput, TouchableOpacity, Image } from "react-native";
+import {
+  View,
+  Text,
+  TextInput,
+  TouchableOpacity,
+  Image,
+  ImageBackground,
+} from "react-native";
 import React, { useState } from "react";
 import { styles, text } from "@/constants/Styles";
 import { Link, router } from "expo-router";
 
 const SignInEffect = () => {
   const [user, setUser] = useState({
-    email: "",
-    password: "",
+    email: "nguyenvanle@gmail.com",
+    password: "123456",
   });
 };
 
@@ -14,7 +21,6 @@ const SignIn = () => {
   return (
     <View style={styles.containerSignIn}>
       <Text style={text.text150}>Welcome</Text>
-      <Image />
       <View
         style={{
           flexDirection: "row",
